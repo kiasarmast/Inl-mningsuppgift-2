@@ -1,0 +1,56 @@
+
+/* Elementselektor */
+h2 {
+  margin-bottom: 0.5em;
+}
+
+/* Klassselektor */
+.card {
+  padding: 1rem;
+}
+
+/* ID-selektor */
+#menu {
+  list-style: none;
+}
+
+/* Kombinationsselektor */
+nav ul > li a:hover {
+  text-decoration: underline;
+}
+.box {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #333;
+  margin: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between; /* horisontal fördelning */
+  align-items: center;           /* vertikal centrering */
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+/* Basstilar */
+body {
+  font-size: 16px;
+}
+
+/* För skärmar < 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+:root {
+  --primary-color: #3498db;
+  --spacing: 1rem;
+}
+
+.button {
+  background-color: var(--primary-color);
+  padding: var(--spacing);
+}
